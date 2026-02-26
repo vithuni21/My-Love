@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title >Happy Birthday 👑🎂</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="bg-message">
+    <div id="float-layer" class="float-layer" aria-hidden="true"></div>
+
+    <div class="music">
+      <button id="music-btn" type="button" aria-label="Toggle background music">
+        <span data-icon>♡</span>
+        <span data-label>Music: Off</span>
+      </button>
+    </div>
+
+    <audio id="bg-music" loop>
+      <source src="./assets/music.mp3" type="audio/mpeg" />
+    </audio>
+
+    <main class="wrap">
+      <section class="card" style="position:relative;">
+        <div class="confetti" aria-hidden="true">
+          <i style="--x: 5%; animation-delay: 0s"></i>
+          <i style="--x: 18%; animation-delay: -0.35s"></i>
+          <i style="--x: 32%; animation-delay: -0.7s"></i>
+          <i style="--x: 48%; animation-delay: -1.05s"></i>
+          <i style="--x: 62%; animation-delay: -1.4s"></i>
+          <i style="--x: 76%; animation-delay: -1.75s"></i>
+          <i style="--x: 90%; animation-delay: -2.1s"></i>
+
+          <div class="firework one"></div>
+          <div class="firework two"></div>
+          <div class="firework three"></div>
+        </div>
+
+        <h1 style="margin-top:.2rem; color:#e27777;">Happy Birthday My King 👑🎂</h1>
+        <p class="lead">
+          Today is a celebration of your heart, your strength, and the love you give so effortlessly.
+        </p>
+
+        <div
+          style="
+            margin: 0.4rem auto 0;
+            max-width: 68ch;
+            line-height: 1.75;
+            color: rgba(255, 243, 255, 0.92);
+            font-size: 1.05rem;
+          "
+        >
+          <b>Editable message:</b> My love, thank you for choosing me and for loving me in a way that feels like home.
+          You are my comfort after long days, my favorite smile, and my safest place.
+          <br /><br />
+          I’m so proud of the man you are and the man you’re becoming. I promise to keep cheering for you, laughing with you,
+          and loving you harder with every new chapter we write together.
+          <br /><br />
+          Happy birthday, my king. May this year bring you everything you dream of — and may I be right there beside you for all of it. ❤️
+        </div>
+
+        <div class="btn-row" style="margin-top: 1.9rem;">
+          <button class="btn secondary" type="button" data-go="./memory.html" style="color:#060606;">Back 💞</button>
+          <button class="btn glow" type="button" onclick="alert('I love you. Happy birthday, my everything ❤️')" style="color:#060606;">
+            I Love You Forever ❤️
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <script src="./app.js" defer></script>
+  </body>
+</html>
+

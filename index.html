@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Happy Birthday My Love</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="bg-welcome">
+    <div id="float-layer" class="float-layer" aria-hidden="true"></div>
+
+    <div class="music">
+      <button id="music-btn" type="button" aria-label="Toggle background music">
+        <span data-icon>♡</span>
+        <span data-label>Music: Off</span>
+      </button>
+    </div>
+
+    <!-- Replace src with your MP3, e.g. ./assets/music.mp3 -->
+    <audio id="bg-music" loop>
+      <source src="./assets/music.mp3" type="audio/mpeg" />
+    </audio>
+
+    <main class="wrap">
+      <section class="card">
+        <div class="kicker"style="color:#060606;">For the love of my life</div>
+        <img src="./assets/us.jpeg" alt="Love" class="hero-photo">
+        <h1 style="color:#060606;">Happy Birthday My Love ❤️</h1>
+        <p class="lead" style="color:#060606;">A little surprise made just for you.</p>
+
+        <div class="chips" aria-hidden="true">
+          <span class="chip">soft kisses 💋</span>
+          <span class="chip">warm hugs 🤍</span>
+          <span class="chip">forever us 💞</span>
+        </div>
+
+        <div class="btn-row">
+          <button class="btn glow" type="button" data-go="./love.html">
+            Click for Your Surprise 💌
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <script src="./app.js" defer></script>
+  </body>
+</html>
+

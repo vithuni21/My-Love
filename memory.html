@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Our Memories 💞</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="bg-memory">
+    <div id="float-layer" class="float-layer" aria-hidden="true"></div>
+
+    <div class="music">
+      <button id="music-btn" type="button" aria-label="Toggle background music">
+        <span data-icon>♡</span>
+        <span data-label>Music: Off</span>
+      </button>
+    </div>
+
+    <audio id="bg-music" loop>
+      <source src="./assets/music.mp3" type="audio/mpeg" />
+    </audio>
+
+    <main class="wrap">
+      <section class="card memory">
+        <h2 style="color:#b1135c; margin-top: .2rem;">Our moments 💞</h2>
+        <p class="lead">
+          Love moments that live softly in my mind — and forever in my heart.
+        </p>
+
+        <div class="moment-grid" role="list">
+          <article class="moment-card" role="listitem">
+            <div class="moment-emoji">💞</div>
+            <div class="moment-text">The day we first talked</div>
+          </article>
+          <article class="moment-card" role="listitem">
+            <div class="moment-emoji">💕</div>
+            <div class="moment-text">Our first laugh together</div>
+          </article>
+          <article class="moment-card" role="listitem">
+            <div class="moment-emoji">💖</div>
+            <div class="moment-text">The first time I realized I love you</div>
+          </article>
+          <article class="moment-card" role="listitem">
+            <div class="moment-emoji">🌙</div>
+            <div class="moment-text">Late night talks &amp; dreams</div>
+          </article>
+          <article class="moment-card" role="listitem">
+            <div class="moment-emoji">🌸</div>
+            <div class="moment-text">Every small moment with you</div>
+          </article>
+          <article class="moment-card" role="listitem">
+            <div class="moment-emoji">❤️</div>
+            <div class="moment-text">Our forever story begins</div>
+          </article>
+        </div>
+
+        <p class="caption">
+          Our moments 💞 — not in pictures, but in my heart forever ❤️
+        </p>
+
+        <div class="btn-row">
+          <button class="btn secondary" type="button" data-go="./love.html" style="color:#060606;">Back 💗</button>
+          <button class="btn glow" type="button" data-go="./message.html" style="color:#060606;">Final Surprise 🎁</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="./app.js" defer></script>
+  </body>
+</html>
+
